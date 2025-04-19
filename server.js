@@ -19,13 +19,14 @@ app.get('/login', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'login.html'));
 });
 
-// Verificar login
 app.post('/login', async (req, res) => {
+    console.log("Dados de login recebidos:", req.body); // Já tínhamos isso
     let { usuario, senha } = req.body;
-
-    // Remove espaços extras e normaliza o usuário
     usuario = usuario.trim().toLowerCase();
     senha = senha.trim();
+
+    console.log("Usuário após trim e lowercase:", usuario);
+    console.log("Senha após trim:", senha);
 
     const { data: admin, error } = await supabase
         .from('admins')
@@ -33,11 +34,20 @@ app.post('/login', async (req, res) => {
         .eq('usuario', usuario)
         .single();
 
-    if (error || !admin) {
+    if (error) {
+        console.error("Erro ao buscar admin:", error);
+        return res.status(401).json({ erro: 'Erro ao buscar usuário.' });
+    }
+
+    if (!admin) {
         return res.status(401).json({ erro: 'Usuário não encontrado.' });
     }
 
+    console.log("Senha armazenada do banco de dados:", admin.senha); // ADICIONE ESTE LOG
+
     const senhaCorreta = await bcrypt.compare(senha, admin.senha);
+
+    console.log("Senha correta?", senhaCorreta); // Já tínhamos isso
 
     if (!senhaCorreta) {
         return res.status(401).json({ erro: 'Senha incorreta.' });
@@ -45,7 +55,6 @@ app.post('/login', async (req, res) => {
 
     res.json({ status: 'logado' });
 });
-
 // Painel administrativo
 app.get('/admin', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'admin.html'));
@@ -123,5 +132,5 @@ app.put('/produtos/:id', async (req, res) => {
 });
 
 // Inicia o servidor
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`🚀 Servidor rodando em http://localhost:${PORT}`));
