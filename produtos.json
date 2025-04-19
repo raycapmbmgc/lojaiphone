@@ -1,0 +1,230 @@
+[
+  {
+    "id": 0,
+    "nome": "iphone 8",
+    "descricao": "",
+    "preco": "",
+    "disponivel": true,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone8.png",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 1,
+    "nome": "iphone 8 plus",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone8plus.png",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 2,
+    "nome": "iphone x",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphonex.png",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 3,
+    "nome": "iphone xr",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphonexr.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 4,
+    "nome": "Iphone 11",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone11.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 5,
+    "nome": "iphone 11 pro max",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/ipphone11pro.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 6,
+    "nome": "iphone 12",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone12.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 7,
+    "nome": "iphone 12 pro",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone12pro.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 8,
+    "nome": "iphone 13",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone13.png",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 9,
+    "nome": "iphone 13 pro",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone13pro.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 10,
+    "nome": "iphone 13 pro max",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone13promax.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 11,
+    "nome": "iphone 14",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone14.png",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 12,
+    "nome": "iphone 14 pro",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone14pro.png",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 13,
+    "nome": "iphone 14 pro max",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone14promax.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 14,
+    "nome": "iphone 15",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone15.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 15,
+    "nome": "iphone 15 pro",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone15pro.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 16,
+    "nome": "iphone 15 pro max",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone15pro.png",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 17,
+    "nome": "iphone 16",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphone16.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  },
+  {
+    "id": 18,
+    "nome": "iphone 16 pro",
+    "descricao": "",
+    "preco": "",
+    "disponivel": false,
+    "imagem": "https://jcjrjoaopubhzvlokfeq.supabase.co/storage/v1/object/public/fotos-iphones/iphonepro.jpg",
+    "opcoes": {
+      "cores": [],
+      "gbs": []
+    }
+  }
+]

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Painel Administrativo</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="imagens/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Login do Administrador</h1>
+    </header>
+
+    <section class="login-form">
+        <form id="loginForm">
+            <div>
+                <label for="usuario">Usuário:</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+            <div>
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="erro-mensagem" class="erro"></p>
+    </section>
+
+<!-- Footer -->
+<footer style="text-align: center; padding: 10px; background-color: #686868; color: #fff; position: fixed; bottom: 0; width: 100%;">
+    <p>Desenvolvido por <a href="https://www.instagram.com/r4ystudio" target="_blank" style="color: #fff; text-decoration: none;">@r4ystudio</a></p>
+</footer>
+
+    <script src="login.js"></script>
+</body>
+</html>
