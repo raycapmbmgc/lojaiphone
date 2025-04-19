@@ -63,7 +63,7 @@ function renderizarProdutosCliente() {
         div.innerHTML = `
             <img src="${produto.imagem}" alt="${produto.nome}" class="produto-imagem">
             <h3>${produto.nome}</h3>
-            <p>${produto.descricao || 'Sem descrição'}</p>
+            <p><strong>Descrição:</strong>${produto.descricao || 'Sem descrição'}</p>
             <p><strong>Preço:</strong> ${produto.preco || 'Não definido'}</p>
             ${gbsOptions}
             ${coresOptions}

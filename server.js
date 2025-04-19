@@ -21,7 +21,11 @@ app.get('/login', (req, res) => {
 
 // Verificar login
 app.post('/login', async (req, res) => {
-    const { usuario, senha } = req.body;
+    let { usuario, senha } = req.body;
+
+    // Remove espaços extras e normaliza o usuário
+    usuario = usuario.trim().toLowerCase();
+    senha = senha.trim();
 
     const { data: admin, error } = await supabase
         .from('admins')
@@ -90,10 +94,12 @@ app.post('/produtos', async (req, res) => {
     res.json({ status: 'ok', produto: data });
 });
 
-// Rota para atualizar um produto existente
+// Atualizar produto
 app.put('/produtos/:id', async (req, res) => {
     const { id } = req.params;
     const produtoAtualizado = req.body;
+
+    delete produtoAtualizado.assistencia; // remover campo inválido
 
     console.log(`Produto recebido para atualizar (ID: ${id}):`, produtoAtualizado);
 
@@ -101,11 +107,11 @@ app.put('/produtos/:id', async (req, res) => {
         .from('produtos')
         .update(produtoAtualizado)
         .eq('id', id)
-        .select(); // Para retornar os dados atualizados
+        .select();
 
     if (error) {
-        console.error(`Erro ao atualizar produto com ID ${id}:`, error);
-        return res.status(500).json({ erro: 'Erro ao atualizar o produto.' });
+        console.error(`Erro ao atualizar produto com ID ${id}:`, error.message);
+        return res.status(500).json({ erro: error.message });
     }
 
     if (data && data.length > 0) {

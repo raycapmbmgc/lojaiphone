@@ -2,8 +2,8 @@
 async function verificarLogin(event) {
     event.preventDefault();  // Impede o envio do formulário
 
-    const usuario = document.getElementById("usuario").value;
-    const senha = document.getElementById("senha").value;
+    const usuario = document.getElementById("usuario").value.trim().toLowerCase();
+    const senha = document.getElementById("senha").value.trim();    
     const erroMensagem = document.getElementById("erro-mensagem");
 
     try {
@@ -24,5 +24,20 @@ async function verificarLogin(event) {
         erroMensagem.textContent = "Erro ao tentar logar. Tente novamente mais tarde.";
     }
 }
+document.getElementById("toggleSenha").addEventListener("click", function() {
+    const senhaInput = document.getElementById("senha");
+    const toggleSenha = document.getElementById("toggleSenha");
+
+    // Verifica se a senha está oculta (tipo "password")
+    if (senhaInput.type === "password") {
+        senhaInput.type = "text"; // Torna a senha visível
+        toggleSenha.textContent = "👐"; // Muda para o ícone do macaquinho abrindo a mão
+    } else {
+        senhaInput.type = "password"; // Torna a senha oculta novamente
+        toggleSenha.textContent = "🙈"; // Muda para o ícone do macaquinho escondendo os olhos
+    }
+});
+
+
 
 document.getElementById("loginForm").addEventListener("submit", verificarLogin);

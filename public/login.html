@@ -18,19 +18,21 @@
                 <label for="usuario">Usuário:</label>
                 <input type="text" id="usuario" name="usuario" required>
             </div>
-            <div>
+            <div style="position: relative;">
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required>
+                <span id="toggleSenha" style="position: absolute; right: 10px; top: 35px; cursor: pointer;">🙈</span>
             </div>
+            
             <button type="submit">Entrar</button>
         </form>
         <p id="erro-mensagem" class="erro"></p>
     </section>
 
-<!-- Footer -->
-<footer style="text-align: center; padding: 10px; background-color: #686868; color: #fff; position: fixed; bottom: 0; width: 100%;">
-    <p>Desenvolvido por <a href="https://www.instagram.com/r4ystudio" target="_blank" style="color: #fff; text-decoration: none;">@r4ystudio</a></p>
-</footer>
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 10px; background-color: #686868; color: #fff; position: fixed; bottom: 0; width: 100%;">
+        <p>Desenvolvido por <a href="https://www.instagram.com/r4ystudio" target="_blank" style="color: #fff; text-decoration: none;">@r4ystudio</a></p>
+    </footer>
 
     <script src="login.js"></script>
 </body>
