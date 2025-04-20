@@ -155,7 +155,7 @@ function saberMais(produtoId) {
 📱 *Aparelho de Entrada*: Sem aparelho de entrada.`;
     }
 
-    const numeroWhatsApp = '5582981636494'; // Substitua pelo número do WhatsApp da loja
+    const numeroWhatsApp = '5582999506483'; // Substitua pelo número do WhatsApp da loja
     const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensagem)}`;
 
     window.open(urlWhatsApp, '_blank');
