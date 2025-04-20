@@ -1,8 +1,14 @@
 let produtos = [];
 
+// Função para ordenar os produtos por ID
+function ordenarProdutosPorId() {
+    produtos.sort((a, b) => a.id - b.id);
+}
+
 // Verifica se há produtos no localStorage ou se deve buscar do servidor
 if (localStorage.getItem('produtos')) {
     produtos = JSON.parse(localStorage.getItem('produtos'));
+    ordenarProdutosPorId(); // Ordena os produtos ao carregar do localStorage
     inicializarAdmin();
 } else {
     fetch('/produtos') // Modificado para pegar produtos do backend
@@ -10,6 +16,7 @@ if (localStorage.getItem('produtos')) {
     .then(data => {
         console.log("Produtos carregados do servidor:", data);
         produtos = data;
+        ordenarProdutosPorId(); // Ordena os produtos ao carregar do servidor
         localStorage.setItem('produtos', JSON.stringify(produtos));
         inicializarAdmin();
     })
@@ -72,7 +79,7 @@ function renderizarProdutosAdmin() {
                 <label>Cores (separadas por vírgula):</label>
                 <input type="text" name="cores" value="${produto.opcoes?.cores?.join(', ') || ''}">
 
-                <label>GBs (separados por vírgula):</label>
+                <label>GBs (separadas por vírgula):</label>
                 <input type="text" name="gbs" value="${produto.opcoes?.gbs?.join(', ') || ''}">
 
                 <button type="submit">Salvar Alterações</button>
